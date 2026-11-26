@@ -1,0 +1,37 @@
+{
+  "name": "@dinobot__/rebound2d",
+  "version": "1.0.3",
+  "description": "Small lightweight physics engine for use in HTML",
+  "type": "module",
+  "main": "./dist/rebound2d.umd.cjs",
+  "module": "./dist/rebound2d.js",
+  "unpkg": "./dist/rebound2d.umd.cjs",
+  "jsdelivr": "./dist/rebound2d.umd.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/rebound2d.js",
+      "require": "./dist/rebound2d.umd.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [
+    "2D",
+    "physics",
+    "javascript",
+    "web",
+    "html",
+    "lite",
+    "simple"
+  ],
+  "author": "DinoBOT__",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^8.3.8"
+  }
+}
