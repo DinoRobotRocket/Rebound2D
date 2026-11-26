@@ -1,6 +1,6 @@
 {
   "name": "@dinobot__/rebound2d",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Small lightweight physics engine for use in HTML",
   "type": "module",
   "main": "./dist/rebound2d.umd.cjs",

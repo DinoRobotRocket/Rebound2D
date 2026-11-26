@@ -35,6 +35,7 @@ export function updatePhysics(dt, bodies, canvas, config = {}) {
       if (onBounce) onBounce(body, impactSpeed);
 
     } else if (body.y - body.radius < 0) {
+      const impactSpeed = Math.abs(body.vy);
       body.y = body.radius;
       body.vy = -body.vy * body.restitution;
 
@@ -43,13 +44,14 @@ export function updatePhysics(dt, bodies, canvas, config = {}) {
 
     //Left & right wall collisions
     if (body.x + body.radius > canvas.width) {
+      const impactSpeed = Math.abs(body.vx);
       body.x = canvas.width - body.radius;
       body.vx = -body.vx * body.restitution;
 
-      const impactSpeed = Math.abs(body.vx);
       if (onBounce) onBounce(body, impactSpeed);
 
     } else if (body.x - body.radius < 0) {
+      const impactSpeed = Math.abs(body.vx);
       body.x = body.radius;
       body.vx = -body.vx * body.restitution;
 
